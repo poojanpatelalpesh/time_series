@@ -4,19 +4,38 @@
 
 #### 1. Exploratory Data Analysis (EDA)
 - Visualized **daily, monthly, and yearly** sales trends.
+- <img width="561" height="567" alt="Screenshot 2025-11-02 at 12 15 51 AM" src="https://github.com/user-attachments/assets/187c344e-1aab-4f00-a172-bf08f4d8a8bb" />
 - Examined store-level and product-level performance.
+- <img width="455" height="390" alt="Screenshot 2025-11-02 at 12 16 49 AM" src="https://github.com/user-attachments/assets/c7cf8edb-be90-4e1c-98d5-ce6a80e8d890" />
+<img width="570" height="331" alt="Screenshot 2025-11-02 at 12 17 11 AM" src="https://github.com/user-attachments/assets/b11c10cc-def8-4a5c-b627-f802d6b4dd96" />
+
 - Used **STL decomposition** to separate trend, seasonality, and residuals.
+- <img width="566" height="352" alt="Screenshot 2025-11-02 at 12 18 26 AM" src="https://github.com/user-attachments/assets/3dc9be50-9ad9-41a1-9559-bf89215f63da" />
+- Used **Autocorrelation and stationarity**
+- <img width="547" height="386" alt="Screenshot 2025-11-02 at 12 24 31 AM" src="https://github.com/user-attachments/assets/f84dad19-76e5-4660-94a2-2bac65b46ae9" />
+
 
 #### 2. Statistical Approach – Z-Score Method
 - Calculated **rolling mean** and **rolling standard deviation**.
 - Flagged anomalies when sales deviated beyond **±2σ**.
 - Simple yet effective for interpretable anomaly detection.
 
+- <img width="531" height="238" alt="Screenshot 2025-11-02 at 12 19 47 AM" src="https://github.com/user-attachments/assets/98b9b5c0-62c9-4b18-958b-30c53a3ec35c" />
+
+
+
+
 #### 3. Machine Learning Approach – Isolation Forest
 - Identified anomalies through random partitioning of data.
 - Handles **non-linear relationships** and **irregular patterns** effectively.
 
-#### 4. Ensemble Approach
+<img width="533" height="233" alt="Screenshot 2025-11-02 at 12 20 37 AM" src="https://github.com/user-attachments/assets/2bd70c1c-2d80-4edc-b94b-8d322f9f679f" />
+
+#### 4. Hybrid Approach - combine Z-score and Isolation Forest anomalies
+<img width="526" height="236" alt="Screenshot 2025-11-02 at 12 22 05 AM" src="https://github.com/user-attachments/assets/3f3dbb7e-b578-4714-8786-ae8ac44bf302" />
+
+
+#### 5. Ensemble Approach
 Combined multiple ML models to make anomaly detection more stable:
 -  **Isolation Forest**  
 -  **One-Class SVM**  
@@ -24,9 +43,15 @@ Combined multiple ML models to make anomaly detection more stable:
 -  **Elliptic Envelope**  
 A data point is marked anomalous if **2 or more models** agree — reducing false positives.
 
-#### 5. Visualization and Trend Analysis
+<img width="530" height="270" alt="Screenshot 2025-11-02 at 12 22 23 AM" src="https://github.com/user-attachments/assets/d856b262-7941-435d-8c5d-467653ede5d7" />
+
+
+#### 6. Visualization and Trend Analysis
 - Used **STL Decomposition**, **Rolling Statistics**, and **ACF/PACF** plots.
 - Overlaid anomalies on time-series graphs for clear interpretation.
+
+- <img width="536" height="237" alt="Screenshot 2025-11-02 at 12 22 42 AM" src="https://github.com/user-attachments/assets/b5a60434-8ea4-41fc-9073-d65b2fe4ef9c" />
+
 
 ---
 
